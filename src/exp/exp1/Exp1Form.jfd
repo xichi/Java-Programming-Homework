@@ -1,0 +1,111 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.4" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) {
+			"hgap": 20
+			"vgap": 20
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 400, 300 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel1"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel2"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "West"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel3"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "East"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel4"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "South"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+				"vgap": 50
+				"hgap": 30
+			} ) {
+				name: "center"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "人民币美元转换器"
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "First"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel7"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Last"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"rows": 2
+					"columns": 1
+					"vgap": 20
+				} ) {
+					name: "rmb_panel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "人民币（RMB）:"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField2"
+						"horizontalAlignment": 2
+						"columns": 1
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Before"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 1
+					"rows": 2
+					"vgap": 20
+				} ) {
+					name: "dollar_panel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "美元（Dollar）："
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField1"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "After"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 1
+					"rows": 2
+					"hgap": 80
+					"vgap": 20
+				} ) {
+					name: "exchange_panel"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "->"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button2"
+						"text": "<-"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 180, 90 )
+			"size": new java.awt.Dimension( 400, 310 )
+		} )
+	}
+}
